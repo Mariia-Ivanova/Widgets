@@ -7,8 +7,9 @@ namespace widgets {
 
 	widget* placeholder::child_at(int x, int y)
 	{
-		// TODO:
-		return nullptr;
+		if (x >= this->width() || y >= this->height())
+			return nullptr;
+		return this;
 	}
 
 	[[nodiscard]] std::unique_ptr<placeholder>

@@ -4,6 +4,8 @@
 #include <memory>
 #include <string>
 #include <vector>
+#include <typeinfo>
+#include <type_traits>
 #include "abstract_widgets.hpp"
 
 namespace widgets {
@@ -18,7 +20,7 @@ namespace widgets {
 		int size() const;
 		widgets::widget* get(int index) const;
 		widgets::widget* add(std::unique_ptr<widgets::widget> child);
-		std::unique_ptr<widgets::widget> remove(int index) const;
+		std::unique_ptr<widgets::widget> remove(int index);
 
 		explicit box(kind kind);
 
