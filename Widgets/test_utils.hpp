@@ -20,7 +20,7 @@
 #define TEST_CHILD_AT
 #define TEST_BALL_ICON
 #define TEST_BOX
-//#define TEST_GRID
+#define TEST_GRID
 //#define TEST_PARENT
 
 #endif  // TEST_UTILS_HPP_
